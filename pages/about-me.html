@@ -33,7 +33,7 @@
 
         </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
 
             <li><a href="../index.html">Home</a></li>
 
@@ -47,11 +47,9 @@
 
         </ul>
 
-        <div class="menu-btn">
-
-            <i class="fas fa-bars"></i>
-
-        </div>
+       <div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
 
     </nav>
 
@@ -633,5 +631,14 @@ high-performance applications.
 <script src="../app.js"></script>
 <script src="about-me.js"></script>
 
+    <script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+    
 </body>
 </html>
