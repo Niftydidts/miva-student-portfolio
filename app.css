@@ -605,3 +605,96 @@ footer{
     transform:translateY(0);
 
 }
+/* ==========================
+   CIRCULAR SKILLS
+========================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.skill-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-circle{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* Circular borders */
+
+.html{
+
+    border:10px solid #6A994E;
+
+}
+
+.css{
+
+    border:10px solid #8DB255;
+
+}
+
+.js{
+
+    border:10px solid #A7C957;
+
+}
+
+.git{
+
+    border:10px solid #4F772D;
+
+}
+
+.skill-card h3{
+
+    color:#2F2F2F;
+
+}
