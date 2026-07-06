@@ -1,3 +1,41 @@
+// ===========================
+// Date & Greeting
+// ===========================
+
+const today = new Date();
+
+const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+};
+
+document.getElementById("today").textContent =
+today.toLocaleDateString("en-GB", options);
+
+const hour = today.getHours();
+
+let greeting = "";
+
+if(hour < 12){
+
+    greeting = "☀️ Good Morning";
+
+}
+else if(hour < 18){
+
+    greeting = "🌤️ Good Afternoon";
+
+}
+else{
+
+    greeting = "🌙 Good Evening";
+
+}
+
+document.getElementById("greeting").textContent = greeting;
+
 const taskInput = document.getElementById("taskInput");
 const addTask = document.getElementById("addTask");
 const taskList = document.getElementById("taskList");
