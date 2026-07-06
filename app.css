@@ -749,3 +749,25 @@ footer{
     }
 
 }
+
+.project-card,
+.about-card,
+.day-card,
+.contact-info,
+.contact-form{
+
+    transition:.35s;
+
+}
+
+.project-card:hover,
+.about-card:hover,
+.day-card:hover,
+.contact-info:hover,
+.contact-form:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
