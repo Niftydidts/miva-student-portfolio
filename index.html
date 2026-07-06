@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- ================= META ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nifemi | Student Portfolio</title>
+    <title>Nifemi Olufemi | Student Portfolio</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,54 +13,51 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7a4f2d8b6d.js" crossorigin="anonymous"></script>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+    <!-- ================= NAVIGATION ================= -->
 
-<header>
+    <header>
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-        <div class="logo">
-            Nifemi<span>.</span>
-        </div>
+            <a href="index.html" class="logo">
+                Nifemi<span>.</span>
+            </a>
 
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
 
-        <ul class="nav-links" id="nav-links">
+            <ul class="nav-links" id="nav-links">
 
-            <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
 
-            <li><a href="pages/about-me.html">About</a></li>
+                <li><a href="#">About</a></li>
 
-            <li><a href="pages/projects-page.html">Projects</a></li>
+                <li><a href="#">Projects</a></li>
 
-            <li><a href="pages/academic-planner.html">Planner</a></li>
+                <li><a href="#">Planner</a></li>
 
-            <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
 
-        </ul>
+            </ul>
 
-    </nav>
+        </nav>
 
-</header>
+    </header>
 
-<!-- ================= HERO ================= -->
+    <!-- ================= HERO ================= -->
 
-<section class="hero">
-
-    <div class="hero-content">
+    <section class="hero">
 
         <div class="hero-text">
 
-            <p class="greeting">
-                Hi 👋 I'm
+            <p class="small-title">
+                HELLO, I'M
             </p>
 
             <h1>
@@ -74,20 +71,20 @@
 
             <p class="hero-description">
 
-                I enjoy learning web development and creating
-                clean, responsive websites that solve real-world
-                problems while improving my programming skills.
+                I enjoy learning web development,
+                building responsive websites and
+                solving real-world problems through technology.
 
             </p>
 
             <div class="hero-buttons">
 
-                <a href="pages/about-me.html" class="btn">
-                    About Me
+                <a href="#" class="btn">
+                    Explore Portfolio
                 </a>
 
-                <a href="pages/contact.html" class="btn-outline">
-                    Contact
+                <a href="#" class="btn-outline">
+                    Contact Me
                 </a>
 
             </div>
@@ -96,18 +93,24 @@
 
         <div class="hero-image">
 
-            <img src="pages/assets/profile.jpg"
-                 alt="Profile Picture">
+            <img src="assets/profile.jpg" alt="Profile Picture">
 
         </div>
 
+    </section>
+
+    <!-- Scroll Indicator -->
+
+    <div class="scroll-indicator">
+
+        <span>Scroll</span>
+
+        <i class="fas fa-angle-down"></i>
+
     </div>
 
-</section>
-
-<!-- More sections coming in the next steps -->
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
