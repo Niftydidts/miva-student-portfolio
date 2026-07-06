@@ -1,0 +1,822 @@
+/* ==========================================
+   PROJECTS PAGE
+==========================================*/
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.projects-hero{
+
+    min-height:60vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#2563EB,#1E40AF);
+
+    color:white;
+
+    padding:120px 8% 70px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero-content h1{
+
+    font-size:3.5rem;
+
+    margin:20px 0;
+
+}
+
+.hero-content p{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+.hero-content .intro{
+
+    color:#FACC15;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   FILTER BUTTONS
+========================== */
+
+.project-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.filter-btn{
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:var(--secondary);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.filter-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.filter-btn.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================
+   PROJECT GRID
+========================== */
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.project-info{
+
+    padding:25px;
+
+}
+
+.project-info h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.project-info p{
+
+    margin-bottom:20px;
+
+    color:var(--text);
+
+}
+
+/* ==========================
+   TAGS
+========================== */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.tags span{
+
+    background:#E0E7FF;
+
+    color:var(--primary);
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.project-links{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.project-links .btn{
+
+    margin:0;
+
+}
+
+.project-links .btn-outline{
+
+    margin:0;
+
+}
+
+/* ==========================================
+   TECHNOLOGY GRID
+==========================================*/
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.tech-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.tech-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--primary);
+
+    transition:.4s;
+
+}
+
+.tech-card:hover::before{
+
+    left:0;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.tech-card i{
+
+    font-size:3.5rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.tech-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.tech-card p{
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+   DEVELOPMENT TIMELINE
+==========================================*/
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-left:40px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+.timeline-icon{
+
+    position:absolute;
+
+    left:-5px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-content{
+
+    margin-left:70px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateX(10px);
+
+}
+
+.timeline-content h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.timeline-content p{
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+   CTA
+==========================================*/
+
+.cta{
+
+    margin-top:80px;
+
+}
+
+.cta h2{
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   HOVER EFFECTS
+==========================================*/
+
+.project-card:hover h3{
+
+    color:var(--primary);
+
+}
+
+.project-card:hover .tags span{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.project-card:hover{
+
+    box-shadow:0 25px 50px rgba(37,99,235,.15);
+
+}
+
+.tech-card:hover i{
+
+    transform:scale(1.15) rotate(8deg);
+
+    transition:.4s;
+
+}
+
+.timeline-content:hover h3{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   FADE-IN ANIMATIONS
+==========================================*/
+
+.project-card{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.tech-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+.timeline-item{
+
+    animation:slideLeft .8s ease;
+
+}
+
+.project-card,
+.tech-card,
+.timeline-content{
+
+    transition:all .35s ease;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+==========================================*/
+
+/* ---------- Large Tablets ---------- */
+
+@media screen and (max-width:1100px){
+
+    .projects-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ---------- Tablets ---------- */
+
+@media screen and (max-width:900px){
+
+    .projects-hero{
+
+        padding:130px 6% 80px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .timeline{
+
+        padding-left:20px;
+
+    }
+
+    .timeline::before{
+
+        left:10px;
+
+    }
+
+    .timeline-icon{
+
+        width:40px;
+
+        height:40px;
+
+        left:-10px;
+
+    }
+
+    .timeline-content{
+
+        margin-left:55px;
+
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width:768px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-filter{
+
+        gap:12px;
+
+    }
+
+    .filter-btn{
+
+        width:150px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+    .project-links{
+
+        flex-direction:column;
+
+    }
+
+    .project-links .btn,
+
+    .project-links .btn-outline{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media screen and (max-width:480px){
+
+    .projects-hero{
+
+        padding-top:120px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .project-info{
+
+        padding:20px;
+
+    }
+
+    .timeline-content{
+
+        padding:20px;
+
+        margin-left:45px;
+
+    }
+
+    .timeline-icon{
+
+        width:35px;
+
+        height:35px;
+
+        font-size:.9rem;
+
+    }
+
+    .filter-btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================
+   DARK MODE
+==========================================*/
+
+body.dark .project-card,
+body.dark .tech-card,
+body.dark .timeline-content{
+
+    background:#1E293B;
+
+    color:#F8FAFC;
+
+}
+
+body.dark .project-info h3,
+body.dark .tech-card h3,
+body.dark .timeline-content h3{
+
+    color:#F8FAFC;
+
+}
+
+body.dark .project-info p,
+body.dark .tech-card p,
+body.dark .timeline-content p{
+
+    color:#CBD5E1;
+
+}
+
+body.dark .tags span{
+
+    background:#334155;
+
+    color:#38BDF8;
+
+}
+
+body.dark .filter-btn{
+
+    background:#1E293B;
+
+    color:white;
+
+}
+
+body.dark .filter-btn.active{
+
+    background:#2563EB;
+
+}
+
+body.dark .timeline::before{
+
+    background:#38BDF8;
+
+}
+
+body.dark .timeline-icon{
+
+    background:#38BDF8;
+
+}
+
+/* ==========================================
+   EXTRA ANIMATIONS
+==========================================*/
+
+.project-card{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.tech-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+.timeline-item{
+
+    animation:slideUp .8s ease;
+
+}
+
+.project-card img{
+
+    transition:transform .5s ease;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   ACCESSIBILITY
+==========================================*/
+
+.filter-btn:focus,
+.project-links a:focus{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================
+   END OF PROJECTS PAGE CSS
+==========================================*/

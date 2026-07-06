@@ -1,0 +1,697 @@
+/* ==========================================
+   CONTACT PAGE
+==========================================*/
+
+/* ==========================
+   HERO
+========================== */
+
+.contact-hero{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#2563EB,#1E40AF);
+
+    color:white;
+
+    padding:120px 8% 80px;
+
+}
+
+.contact-hero .hero-content{
+
+    max-width:700px;
+
+}
+
+.contact-hero h1{
+
+    font-size:3.5rem;
+
+    margin:20px 0;
+
+}
+
+.contact-hero p{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+.contact-hero .intro{
+
+    color:#FACC15;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   CONTACT LAYOUT
+========================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-form{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-form h3{
+
+    margin-bottom:25px;
+
+    color:var(--secondary);
+
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    padding:15px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border-color:var(--primary);
+
+    outline:none;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+}
+
+.contact-form p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+}
+
+/* ==========================
+   CONTACT INFO
+========================== */
+
+.contact-info{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-card i{
+
+    font-size:2.8rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.info-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.info-card p{
+
+    color:var(--text);
+
+    word-break:break-word;
+
+}
+
+/* ==========================================
+   SOCIAL MEDIA SECTION
+==========================================*/
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.social-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    box-shadow:var(--shadow);
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.social-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--primary);
+
+    transition:.4s;
+
+}
+
+.social-card:hover::before{
+
+    left:0;
+
+}
+
+.social-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.social-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.social-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.social-card p{
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+   MAP PLACEHOLDER
+==========================================*/
+
+.map-placeholder{
+
+    background:white;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.map-placeholder i{
+
+    font-size:5rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.map-placeholder h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.map-placeholder p{
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+   FAQ SECTION
+==========================================*/
+
+.faq-container{
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+.faq-item{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.faq-item h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.faq-item p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   CTA
+==========================================*/
+
+.cta{
+
+    margin-top:80px;
+
+}
+
+.cta h2{
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   HOVER EFFECTS
+==========================================*/
+
+.info-card:hover i,
+
+.social-card:hover i{
+
+    transform:scale(1.15);
+
+    transition:.3s;
+
+}
+
+.faq-item:hover h3{
+
+    color:var(--primary);
+
+}
+
+.contact-form{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.info-card{
+
+    animation:slideUp .8s ease;
+
+}
+
+.social-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+.faq-item{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.contact-form,
+.info-card,
+.social-card,
+.faq-item{
+
+    transition:all .35s ease;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+==========================================*/
+
+/* ---------- Laptop ---------- */
+
+@media screen and (max-width:1100px){
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .social-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media screen and (max-width:900px){
+
+    .contact-hero{
+
+        padding:120px 6% 70px;
+
+    }
+
+    .contact-hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .contact-form{
+
+        padding:30px;
+
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width:768px){
+
+    .social-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .contact-hero p{
+
+        font-size:1rem;
+
+    }
+
+    .contact-form{
+
+        padding:25px;
+
+    }
+
+    .info-card{
+
+        padding:25px;
+
+    }
+
+    .map-placeholder{
+
+        padding:40px 20px;
+
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media screen and (max-width:480px){
+
+    .contact-hero{
+
+        padding-top:120px;
+
+    }
+
+    .contact-hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
+
+    .contact-form input,
+
+    .contact-form textarea{
+
+        padding:12px;
+
+    }
+
+}
+
+/* ==========================================
+   DARK MODE
+==========================================*/
+
+body.dark .contact-form,
+body.dark .info-card,
+body.dark .social-card,
+body.dark .faq-item,
+body.dark .map-placeholder{
+
+    background:#1E293B;
+
+    color:#F8FAFC;
+
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea{
+
+    background:#334155;
+
+    border:1px solid #475569;
+
+    color:white;
+
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder{
+
+    color:#CBD5E1;
+
+}
+
+body.dark .info-card h3,
+body.dark .social-card h3,
+body.dark .faq-item h3,
+body.dark .map-placeholder h3{
+
+    color:#F8FAFC;
+
+}
+
+body.dark .info-card p,
+body.dark .social-card p,
+body.dark .faq-item p,
+body.dark .map-placeholder p{
+
+    color:#CBD5E1;
+
+}
+
+/* ==========================================
+   ACCESSIBILITY
+==========================================*/
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus,
+.social-card:focus{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:3px;
+
+}
+
+/* ==========================================
+   EXTRA ANIMATIONS
+==========================================*/
+
+.contact-form{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.info-card{
+
+    animation:slideUp .8s ease;
+
+}
+
+.social-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+.faq-item{
+
+    animation:slideLeft .8s ease;
+
+}
+
+.map-placeholder{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* ==========================================
+   END OF CONTACT PAGE
+==========================================*/
