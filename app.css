@@ -1,6 +1,6 @@
-/* ================================
+/* ==========================
    GOOGLE FONT & RESET
-================================ */
+========================== */
 
 *{
     margin:0;
@@ -12,51 +12,63 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family:"Poppins",sans-serif;
-    background:#FFF8E8;
-    color:#2F2F2F;
-    line-height:1.7;
-}
-
-/* ================================
-   COLORS
-================================ */
-
 :root{
 
-    --background:#FFF8E8;
-
-    --white:#FFFFFF;
-
-    --green:#6A8F4E;
-
+    --bg:#FFF8E8;
+    --white:#ffffff;
+    --green:#6A994E;
     --green-dark:#4F772D;
-
-    --green-light:#A8CFA5;
-
+    --green-light:#DDE8C8;
     --text:#2F2F2F;
-
-    --border:#E8DFC8;
+    --border:#E9DFC7;
 
 }
 
-/* ================================
-   LINKS
-================================ */
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+/* subtle paper texture */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(106,153,78,.04) 0,transparent 220px),
+    radial-gradient(circle at 80% 70%,rgba(106,153,78,.03) 0,transparent 250px);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
 
 a{
+
     text-decoration:none;
     color:inherit;
+
 }
 
 img{
+
     width:100%;
     display:block;
+
 }
-/* ================================
-   NAVBAR
-================================ */
+/* ==========================
+        NAVIGATION
+========================== */
 
 header{
 
@@ -68,7 +80,7 @@ header{
 
     background:rgba(255,248,232,.95);
 
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(10px);
 
     border-bottom:1px solid var(--border);
 
@@ -76,11 +88,9 @@ header{
 
 .navbar{
 
-    max-width:1200px;
+    max-width:1100px;
 
     margin:auto;
-
-    padding:18px 30px;
 
     display:flex;
 
@@ -88,11 +98,13 @@ header{
 
     align-items:center;
 
+    padding:20px;
+
 }
 
 .logo{
 
-    font-size:1.6rem;
+    font-size:1.7rem;
 
     font-weight:700;
 
@@ -122,8 +134,6 @@ header{
 
 }
 
-/* Growing underline */
-
 .nav-links a::after{
 
     content:"";
@@ -140,11 +150,13 @@ header{
 
     background:var(--green);
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
-.nav-links a:hover::after{
+.nav-links a:hover::after,
+
+.nav-links .active::after{
 
     width:100%;
 
@@ -154,50 +166,46 @@ header{
 
     display:none;
 
-    font-size:2rem;
+    font-size:1.8rem;
 
     cursor:pointer;
 
 }
-/* ================================
-   HERO
-================================ */
+/* ==========================
+        HERO
+========================== */
 
 .hero{
 
-    min-height:90vh;
+    min-height:85vh;
 
     display:flex;
 
-    align-items:center;
-
-}
-
-.hero-content{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:60px 30px;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:60px;
+    justify-content:center;
 
     align-items:center;
 
+    text-align:center;
+
+    padding:60px 20px 20px;
+
 }
 
-.greeting{
+.hero-text{
+
+    max-width:700px;
+
+}
+
+.small-title{
 
     color:var(--green);
 
     font-weight:600;
 
-    margin-bottom:15px;
+    letter-spacing:3px;
+
+    margin-bottom:20px;
 
 }
 
@@ -211,11 +219,11 @@ header{
 
 .hero h2{
 
-    font-size:1.6rem;
+    font-size:1.4rem;
 
     font-weight:500;
 
-    color:#555;
+    color:#666;
 
     margin-bottom:25px;
 
@@ -223,30 +231,36 @@ header{
 
 .hero-description{
 
-    max-width:500px;
+    max-width:600px;
+
+    margin:auto;
 
     margin-bottom:35px;
 
-}
+    line-height:1.8;
 
+}
 .hero-buttons{
 
     display:flex;
+
+    justify-content:center;
 
     gap:20px;
 
     flex-wrap:wrap;
 
 }
+
 .btn{
 
     background:var(--green);
 
     color:white;
 
-    padding:14px 28px;
+    padding:15px 30px;
 
-    border-radius:30px;
+    border-radius:50px;
 
     transition:.3s;
 
@@ -254,9 +268,9 @@ header{
 
 .btn:hover{
 
-    background:var(--green-dark);
+    transform:translateY(-4px);
 
-    transform:translateY(-3px);
+    background:var(--green-dark);
 
 }
 
@@ -266,9 +280,9 @@ header{
 
     color:var(--green);
 
-    padding:14px 28px;
+    padding:15px 30px;
 
-    border-radius:30px;
+    border-radius:50px;
 
     transition:.3s;
 
@@ -283,29 +297,27 @@ header{
 }
 .hero-image{
 
-    display:flex;
+    width:220px;
 
-    justify-content:center;
+    margin:60px auto 0;
 
 }
 
 .hero-image img{
 
-    width:370px;
-
     border-radius:50%;
 
     border:8px solid white;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
-    animation:floatProfile 4s ease-in-out infinite;
+    animation:float 5s ease-in-out infinite;
 
 }
 
-@keyframes floatProfile{
+@keyframes float{
 
-    0%{
+    0%,100%{
 
         transform:translateY(0);
 
@@ -313,14 +325,72 @@ header{
 
     50%{
 
-        transform:translateY(-10px);
+        transform:translateY(-12px);
 
     }
 
-    100%{
+}
+.scroll-indicator{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    color:var(--green);
+
+    margin-bottom:50px;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
 
         transform:translateY(0);
 
     }
+
+    50%{
+
+        transform:translateY(8px);
+
+    }
+
+}
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:2.6rem;
+
+}
+
+.hero h2{
+
+    font-size:1.2rem;
+
+}
+
+.nav-links{
+
+    display:none;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+.hero-image{
+
+    width:180px;
+
+}
 
 }
