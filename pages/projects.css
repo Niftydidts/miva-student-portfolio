@@ -1,1 +1,184 @@
+/* ==========================
+   PROJECTS PAGE
+========================== */
+
+body{
+    background:#FFF8E8;
+    font-family:'Poppins',sans-serif;
+    color:#2F2F2F;
+}
+
+/* Hero */
+
+.project-hero{
+
+    text-align:center;
+
+    padding:80px 20px 50px;
+
+}
+
+.project-hero h1{
+
+    font-size:3rem;
+
+    color:#4F772D;
+
+    margin-bottom:20px;
+
+}
+
+.project-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+/* Cards */
+
+.project-container{
+
+    max-width:1100px;
+
+    margin:0 auto 80px;
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.project-card h2{
+
+    color:#4F772D;
+
+    margin-bottom:20px;
+
+}
+
+.project-card p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* Technologies */
+
+.tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.tech span{
+
+    background:#DDE8C8;
+
+    color:#4F772D;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+/* Button */
+
+.project-card .btn{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#6A994E;
+
+    color:white;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.project-card .btn:hover{
+
+    background:#4F772D;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    border-top:1px solid #ddd;
+
+    color:#666;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.project-hero h1{
+
+font-size:2.2rem;
+
+}
+
+.project-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
 
