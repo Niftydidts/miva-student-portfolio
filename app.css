@@ -771,3 +771,25 @@ footer{
     box-shadow:0 18px 40px rgba(0,0,0,.12);
 
 }
+
+body{
+
+    animation:fadePage .6s ease;
+
+}
+
+@keyframes fadePage{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
