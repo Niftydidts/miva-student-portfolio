@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,107 +14,106 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7a4f2d8b6d.js" crossorigin="anonymous"></script>
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+<!-- ================= NAVIGATION ================= -->
 
-    <header>
+<header>
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                Nifemi<span>.</span>
+        <a href="index.html" class="logo">
+            Nifemi<span>.</span>
+        </a>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="pages/about-me.html">About</a></li>
+
+            <li><a href="pages/projects.html">Projects</a></li>
+
+            <li><a href="pages/academic-planner.html">Planner</a></li>
+
+            <li><a href="pages/contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            HELLO, I'M
+        </p>
+
+        <h1>
+            Nifemi Olufemi
+        </h1>
+
+        <h2>
+            Computer Science Student <br>
+            MIVA University
+        </h2>
+
+        <p class="hero-description">
+
+            I enjoy learning web development,
+            building responsive websites and
+            solving real-world problems through technology.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="pages/projects.html" class="btn">
+                Explore Portfolio
             </a>
 
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-
-            <ul class="nav-links" id="nav-links">
-
-                <li><a href="index.html" class="active">Home</a></li>
-
-                <li><a href="#">About</a></li>
-
-                <li><a href="#">Projects</a></li>
-
-                <li><a href="#">Planner</a></li>
-
-                <li><a href="#">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
-
-        <div class="hero-text">
-
-            <p class="small-title">
-                HELLO, I'M
-            </p>
-
-            <h1>
-                Nifemi Olufemi
-            </h1>
-
-            <h2>
-                Computer Science Student <br>
-                MIVA University
-            </h2>
-
-            <p class="hero-description">
-
-                I enjoy learning web development,
-                building responsive websites and
-                solving real-world problems through technology.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#" class="btn">
-                    Explore Portfolio
-                </a>
-
-                <a href="#" class="btn-outline">
-                    Contact Me
-                </a>
-
-            </div>
+            <a href="pages/contact.html" class="btn-outline">
+                Contact Me
+            </a>
 
         </div>
-
-        <div class="hero-image">
-
-            <img src="assets/profile.jpg" alt="Profile Picture">
-
-        </div>
-
-    </section>
-
-    <!-- Scroll Indicator -->
-
-    <div class="scroll-indicator">
-
-        <span>Scroll</span>
-
-        <i class="fas fa-angle-down"></i>
 
     </div>
 
-    <script src="script.js"></script>
+    <div class="hero-image">
 
-</body>
+        <img src="assets/profile.jpg" alt="Profile Picture">
 
-</html>
+    </div>
+
+</section>
+
+<!-- ================= SCROLL ================= -->
+
+<div class="scroll-indicator">
+
+    <span>Scroll</span>
+
+    <i class="fas fa-angle-down"></i>
+
+</div>
+
+<!-- ================= ABOUT ================= -->
+
 <section class="about-preview section">
 
     <h2 class="section-title">About Me</h2>
@@ -121,39 +121,64 @@
     <div class="about-card">
 
         <p>
+
             I am a Computer Science student at MIVA University with a passion for
             web development and creating responsive websites. I enjoy learning new
             technologies and applying them to real-world projects.
+
         </p>
 
         <a href="pages/about-me.html" class="btn">
+
             Learn More
+
         </a>
 
     </div>
 
 </section>
+
+<!-- ================= SKILLS ================= -->
+
 <section class="skills section">
 
-    <h2 class="section-title">Technical Skills</h2>
+    <h2 class="section-title">
+
+        Technical Skills
+
+    </h2>
 
     <div class="skills-grid">
 
         <div class="skill">HTML5</div>
+
         <div class="skill">CSS3</div>
+
         <div class="skill">JavaScript</div>
+
         <div class="skill">Git</div>
+
         <div class="skill">GitHub</div>
+
         <div class="skill">VS Code</div>
+
         <div class="skill">Responsive Design</div>
+
         <div class="skill">Problem Solving</div>
 
     </div>
 
 </section>
+
+<!-- ================= PROJECTS ================= -->
+
 <section class="projects section">
 
-    <h2 class="section-title">Featured Projects</h2>
+    <h2 class="section-title">
+
+        Featured Projects
+
+    </h2>
 
     <div class="project-grid">
 
@@ -162,7 +187,9 @@
             <h3>Grade Calculator</h3>
 
             <p>
+
                 A JavaScript application that calculates grades based on user input.
+
             </p>
 
         </div>
@@ -172,7 +199,9 @@
             <h3>Course Registration</h3>
 
             <p>
+
                 A responsive course registration interface built using HTML and CSS.
+
             </p>
 
         </div>
@@ -182,7 +211,9 @@
             <h3>Budget Tracker</h3>
 
             <p>
+
                 A personal finance tracker developed with JavaScript.
+
             </p>
 
         </div>
@@ -190,12 +221,21 @@
     </div>
 
 </section>
+
+<!-- ================= CTA ================= -->
+
 <section class="cta">
 
-    <h2>Let's Connect</h2>
+    <h2>
+
+        Let's Connect
+
+    </h2>
 
     <p>
+
         Interested in my work or looking to collaborate?
+
     </p>
 
     <a href="pages/contact.html" class="btn">
@@ -205,3 +245,23 @@
     </a>
 
 </section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Nifemi Olufemi • COS 106 Student Portfolio
+
+    </p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
