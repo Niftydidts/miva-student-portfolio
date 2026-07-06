@@ -4,24 +4,53 @@ const taskList = document.getElementById("taskList");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-function saveTasks(){
-
+function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
-
 }
 
-function renderTasks(){
+function renderTasks() {
 
     taskList.innerHTML = "";
 
-    tasks.forEach((task,index)=>{
+    let completed = 0;
+
+    tasks.forEach((task, index) => {
 
         const li = document.createElement("li");
 
+        if(task.completed){
+            completed++;
+        }
+
         li.innerHTML = `
-            <span>${task}</span>
-            <button class="delete-btn">Delete</button>
+
+            <span class="${task.completed ? "completed" : ""}">
+                ${task.text}
+            </span>
+
+            <div class="buttons">
+
+                <button class="complete-btn">
+                    ${task.completed ? "Undo" : "Done"}
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+
+            </div>
+
         `;
+
+        li.querySelector(".complete-btn").addEventListener("click",()=>{
+
+            tasks[index].completed = !tasks[index].completed;
+
+            saveTasks();
+
+            renderTasks();
+
+        });
 
         li.querySelector(".delete-btn").addEventListener("click",()=>{
 
@@ -37,6 +66,20 @@ function renderTasks(){
 
     });
 
+    document.getElementById("progress").innerHTML =
+        `${completed} / ${tasks.length} Tasks Completed`;
+
+    if(tasks.length > 0 && completed === tasks.length){
+
+        document.getElementById("message").innerHTML =
+        "🎉 Excellent! You've completed all your study tasks!";
+
+    }else{
+
+        document.getElementById("message").innerHTML = "";
+
+    }
+
 }
 
 addTask.addEventListener("click",()=>{
@@ -45,7 +88,13 @@ addTask.addEventListener("click",()=>{
 
     if(value==="") return;
 
-    tasks.push(value);
+    tasks.push({
+
+        text:value,
+
+        completed:false
+
+    });
 
     saveTasks();
 
