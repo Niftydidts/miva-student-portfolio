@@ -255,3 +255,31 @@
     font-weight:600;
 
 }
+
+/* Planner Header */
+
+.planner-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+#today{
+
+    color:#4F772D;
+
+    font-size:1.3rem;
+
+}
+
+#greeting{
+
+    color:#666;
+
+    font-size:1rem;
+
+    margin-top:8px;
+
+}
